@@ -11,4 +11,13 @@ var (
 
 	// ErrInvalidWeekNumber indicates an invalid week number was provided
 	ErrInvalidWeekNumber = errors.New("invalid week number")
+
+	// ErrLoanFullyPaid indicates attempting to pay an already fully paid loan
+	ErrLoanFullyPaid = errors.New("loan is already fully paid")
+
+	// ErrWeekAlreadyPaid indicates attempting to pay for a week that's already paid
+	ErrWeekAlreadyPaid = errors.New("this week has already been paid")
+
+	// ErrPaymentOutOfSequence indicates attempting to pay a week out of sequence
+	ErrPaymentOutOfSequence = errors.New("payments must be made in sequence (cannot skip unpaid weeks)")
 )
