@@ -154,13 +154,13 @@ Delinquency = (CurrentWeek - LastPaidWeek) >= 2
 
 ## Edge Cases
 
-✅ Duplicate payments (returns error)
-✅ Out-of-sequence (rejected)
-✅ Wrong amounts (validated)
-✅ Negative amounts (rejected)
-✅ Invalid week numbers (validated)
-✅ Payments after closure (rejected)
-✅ Concurrent access (thread-safe)
+- Duplicate payments (returns error)
+- Out-of-sequence (rejected)
+- Wrong amounts (validated)
+- Negative amounts (rejected)
+- Invalid week numbers (validated)
+- Payments after closure (rejected)
+- Concurrent access (thread-safe)
 
 ## Performance Considerations
 
